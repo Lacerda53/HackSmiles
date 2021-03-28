@@ -12,12 +12,12 @@ class TaskPage extends StatelessWidget {
     CheckBoxModel(text: "Arrumar o quarto 15 dias"),
   ];
   final List<CheckBoxModel> itensFinished = [
-    CheckBoxModel(text: "Ler um livro",checked: true),
-    CheckBoxModel(text: "Arrumar o quarto todos os dias",checked: true),
+    CheckBoxModel(text: "Ler um livro", checked: true),
+    CheckBoxModel(text: "Arrumar o quarto todos os dias", checked: true),
   ];
   final List<CheckBoxModel> itensConfirmed = [
-    CheckBoxModel(text: "Lavar a louça 15 dias",checked: true, finish: true),
-    CheckBoxModel(text: "Ler um livro",checked: true, finish: true),
+    CheckBoxModel(text: "Lavar a louça 15 dias", checked: true, finish: true),
+    CheckBoxModel(text: "Ler um livro", checked: true, finish: true),
   ];
 
   @override
@@ -73,7 +73,10 @@ class TaskPage extends StatelessWidget {
                 child: ListView.builder(
                   itemCount: itensFinished.length,
                   itemBuilder: (_, int index) {
-                    return CheckboxWidget(item: itensFinished[index], validate: true,);
+                    return CheckboxWidget(
+                      item: itensFinished[index],
+                      validate: true,
+                    );
                   },
                 ),
               ),
