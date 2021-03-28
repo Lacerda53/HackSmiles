@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hacksmiles/pages/welcome.page.dart';
+import 'package:hacksmiles/pages/bottombar.page.dart';
 import 'package:hacksmiles/theme/styles.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class Main extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: defaultTheme(),
-      home: WelcomePage(),
+      home: BottomBar(),
     );
   }
 }

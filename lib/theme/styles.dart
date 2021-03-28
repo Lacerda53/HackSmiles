@@ -7,8 +7,6 @@ const textColor = const Color(0xFFFFFFFF);
 const grayColor = const Color(0xFFAAA8AD);
 const bgColor = const Color(0xFFFFFFFF);
 
-
-
 ThemeData defaultTheme() {
   return ThemeData(
     brightness: brightness,
