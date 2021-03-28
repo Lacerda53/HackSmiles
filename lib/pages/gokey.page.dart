@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hacksmiles/pages/bottombar.page.dart';
+import 'package:hacksmiles/pages/validatekey.page.dart';
 import 'package:hacksmiles/theme/styles.dart';
 import 'package:hacksmiles/widgets/button.widget.dart';
 
-class OnboardingPage extends StatelessWidget {
+class GokeyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,12 +14,12 @@ class OnboardingPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset('lib/assets/onboarding.png'),
+              Image.asset('lib/assets/gokey.png', width: MediaQuery.of(context).size.width/1.4,),
               SizedBox(
                 height: 50,
               ),
               Text(
-                "Seu responsável criou um plano de tarefas personalizado",
+                "Bem vindo ao app!",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: primaryColor,
@@ -30,7 +30,7 @@ class OnboardingPage extends StatelessWidget {
                 height: 20,
               ),
               Text(
-                "Realize todas as tarefas estipuladas para garantir suas milhas. Elas não possuem validade.",
+                "Entre utilizando o link de acesso enviado pelo seu responsável ou utilize a chave de acesso",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xFF8C8792),
@@ -44,9 +44,9 @@ class OnboardingPage extends StatelessWidget {
       bottomSheet: Container(
         padding: EdgeInsets.only(left:15, bottom: 20, right: 15),
         child: ButtonWidget(
-          text: "COMEÇAR",
+          text: "TENHO UMA CHAVE DE ACESSO",
           color: secundaryColor,
-          to: new BottomBar(),
+          to: new ValidatekeyPage(),
         ),
       ),
     );

@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class ButtonWidget extends StatefulWidget {
   final String text;
   final Color color;
+  final Widget to;
 
-  ButtonWidget({this.text, this.color = Colors.transparent});
+  ButtonWidget({this.text, this.color = Colors.transparent, this.to});
   @override
   _ButtonWidgetState createState() => _ButtonWidgetState();
 }
@@ -21,7 +22,15 @@ class _ButtonWidgetState extends State<ButtonWidget> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50),
         ),
-        onPressed: () => {},
+        onPressed: () => {
+          if (widget.to != null)
+            {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => widget.to))
+            }
+        },
         color: widget.color,
         textColor: Colors.white,
         child: Text(
