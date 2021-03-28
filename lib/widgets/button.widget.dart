@@ -15,6 +15,7 @@ class _ButtonWidgetState extends State<ButtonWidget> {
     return Container(
       width: MediaQuery.of(context).size.width / 1.1,
       height: 45,
+      // ignore: deprecated_member_use
       child: RaisedButton(
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -29,8 +30,7 @@ class _ButtonWidgetState extends State<ButtonWidget> {
               color: Color(0xFFFFFFFF),
               fontSize: 15,
               fontWeight: FontWeight.bold,
-              letterSpacing: 1.0
-              ),
+              letterSpacing: 1.0),
         ),
       ),
     );
