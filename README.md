@@ -1,9 +1,5 @@
 # Hacksmiles
 
-📜 Descrição ...
+📜 Projeto desenvolvido em Flutter afim de criar um mvp para o Hackathon da Smiles
 
-<!-- <p align="center">
-<img src="" alt="" border="0">
-</p> -->
-
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+💡 Smiles Teens conduz o jovem por uma jornada de responsabilidades e planejamento financeiro. Os responsáveis realizam o cadastro, incluem o quanto poderiam investir mensalmente por filho e qual o destino que os jovens gostariam de ir. O sistema informará uma lista de atividades mais comuns para que o responsável possa preencher, com prazo e a frequência que deverão ser realizadas pelos jovens. Caso tenha alguma outra atividade não listada, o responsável poderá incluir também. De acordo com o valor investido, o sistema dividirá automaticamente o valor de cada atividade em milhas e somente após confirmação dos pais que as atividades foram realizadas, o valor será mostrado no dashboard dos jovens. No dashboard dos jovens, a viagem aparecerá convertida em milhas e conforme realizarem as atividades, terá um gráfico mostrando quantos por cento ainda faltam para atingir o objetivo, motivando que eles aumentem suas responsabilidades, deem mais valor para suas conquistas e adquiram conhecimento financeiro que é pouco abordado nas escolas. Serão ofertados alguns planos de acordo com o perfil do responsável para que os valores depositados na Smiles Teens sejam convertidos em milhas. Além da viagem, os pais poderão separar parte dos valores como pequenas recompensas para que os jovens possam usar no marketplace da Smiles. 
